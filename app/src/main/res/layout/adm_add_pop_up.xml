@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+    android:background="@android:color/transparent"
+    android:layout_gravity="center"
+    android:layout_height="180dp">
+    
+    <TextView
+        android:layout_width="330dp"
+        android:layout_height="85dp"
+        android:background="@drawable/textbox_background"
+        android:backgroundTint="@color/white"/>
+
+    <TextView
+        android:layout_width="330dp"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/textbox_background"
+        android:backgroundTint="@color/white"/>
+
+    <Button
+        android:text="nova obra"
+        android:textColor="#1c1c1c"
+        android:fontFamily="@font/montserrat_light1"
+
+        android:textSize="30sp"
+        android:layout_width="330dp"
+        android:layout_height="85dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/add_frame_btn"
+        />
+
+    <Button
+        android:fontFamily="@font/montserrat_light1"
+        android:text="novo autor"
+        android:textColor="#1c1c1c"
+
+        android:textSize="30sp"
+        android:layout_width="330dp"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:id="@+id/add_autor_btn"/>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:backgroundTint="#1c1c1c"
+        android:background="@drawable/sb_frame_icon"
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_marginTop="20dp"
+        android:layout_alignTop="@id/add_autor_btn"
+        android:layout_marginStart="12dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:backgroundTint="#1c1c1c"
+        android:background="@drawable/sb_person_icon"
+        />
+    
+
+</RelativeLayout>

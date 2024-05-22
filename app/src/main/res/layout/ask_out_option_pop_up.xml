@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+
+    android:background="@android:color/transparent"
+    >
+
+    <Button
+        android:id="@+id/pop_up_ask_out_button"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_alignStart="@+id/pop_up_ask_text"
+        android:layout_alignTop="@id/pop_up_ask_text"
+        android:layout_alignBottom="@id/pop_up_ask_text"
+        android:layout_alignEnd="@id/pop_up_ask_text"
+        android:background="@android:color/transparent"
+
+        />
+
+
+    <TextView
+
+        android:id="@+id/pop_up_ask_text"
+        android:layout_width="260dp"
+        android:fontFamily="@font/montserrat_light1"
+        android:singleLine="true"
+        android:layout_height="60dp"
+        android:text="Sair do modo de edição"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        />
+
+
+</RelativeLayout>

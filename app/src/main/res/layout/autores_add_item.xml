@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1c1c1c"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/autor_options">
+    <TextView
+        android:id="@+id/autor_name"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome do Autor"
+        android:textSize="18sp"
+        android:paddingStart="16dp"
+        android:singleLine="true"
+        android:paddingEnd="16dp"
+        android:fontFamily="@font/montserrat_light1"
+        android:textColor="#acacac"
+        android:layout_marginTop="8dp"/>
+
+</RelativeLayout>

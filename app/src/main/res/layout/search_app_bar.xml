@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#1c1c1c"
+    android:layout_height="137dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/selectedItem"
+        android:layout_marginTop="85dp"/>
+    
+    <TextView
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/selectedItem"
+        android:layout_marginTop="136dp"/>
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/sb_frame_line"
+        android:layout_width="185dp"
+        android:layout_height="5dp"
+        android:background="@color/selectedItem"
+        android:layout_alignParentBottom="true"/>
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/sb_person_line"
+        android:layout_width="185dp"
+        android:layout_height="5dp"
+        android:background="@color/selectedItem"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+
+
+    <EditText
+        android:fontFamily="@font/montserrat_light1"
+        android:background="@drawable/textbox_background"
+        android:hint="Pesquisar"
+        android:textColorHint="#acacac"
+        android:paddingStart="16dp"
+        android:id="@+id/sb_textbox_search"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="#ffffff"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:paddingEnd="38dp"
+        />
+
+    <Button
+        android:id="@+id/sb_frame_button"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/sb_frame_icon"
+        android:text="obras"
+        android:drawableTint="@android:color/transparent"
+        android:background="@android:color/transparent"
+        android:textColor="@color/unselectedItem"
+        android:textSize="22sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="2dp"
+        android:layout_alignParentBottom="true"
+        />
+    <ImageView
+        android:id="@+id/sb_frame_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sb_frame_icon"
+        android:layout_alignStart="@+id/sb_frame_button"
+        android:layout_alignBottom="@+id/sb_frame_button"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/unselectedItem"
+        />
+
+    <Button
+        android:id="@+id/sb_person_button"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/sb_person_icon"
+        android:text="autores"
+        android:drawableTint="@android:color/transparent"
+        android:background="@android:color/transparent"
+        android:textColor="@color/unselectedItem"
+        android:textSize="22sp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        />
+    <ImageView
+        android:id="@+id/sb_person_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sb_person_icon"
+        android:layout_alignStart="@+id/sb_person_button"
+        android:layout_alignBottom="@+id/sb_frame_button"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/unselectedItem"
+        />
+
+
+    <ImageButton
+        android:id="@+id/sb_mic_button"
+        android:visibility="visible"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/sb_mic_icon"
+        android:layout_alignEnd="@id/sb_textbox_search"
+        android:layout_alignTop="@id/sb_textbox_search"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="#acacac"/>
+    <ImageButton
+        android:id="@+id/sb_cancel_button"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sb_cancel_icon"
+        android:backgroundTint="#ffffff"
+        android:layout_alignEnd="@id/sb_mic_button"
+        android:layout_alignBottom="@id/sb_mic_button"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="2dp"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserObraFragment"
+    >
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#1c1c1c"/>
+
+    <TextView
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#1c1c1c"
+        android:layout_below="@id/appbar"/>
+    <ImageButton
+        android:id="@+id/frame_back_button"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/info_back_icon"
+        android:backgroundTint="@color/unselectedItem"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/appbar"
+        android:layout_marginEnd="8dp"
+        />
+    <LinearLayout
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1c1c1c">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/autor_info_image"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/circle"/>
+
+                <ImageButton
+                    android:id="@+id/play_audio"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/play_icon"
+                    android:backgroundTint="@color/unselectedItem"
+                    android:layout_marginStart="17dp"
+                    android:layout_below="@id/autor_info_image"
+                    android:layout_marginTop="32dp"
+                    />
+                <ImageButton
+                    android:visibility="invisible"
+                    android:id="@+id/pause_audio"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/pause_icon"
+                    android:backgroundTint="@color/unselectedItem"
+                    android:layout_marginStart="17dp"
+                    android:layout_below="@id/autor_info_image"
+                    android:layout_marginTop="32dp"/>
+
+                <ImageView
+                    android:id="@+id/audio_ic"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/audio_icon"
+                    android:backgroundTint="@color/unselectedItem"
+                    android:layout_alignStart="@id/play_audio"
+                    android:layout_alignTop="@id/play_audio"
+                    android:layout_marginStart="42dp"
+                    android:layout_marginTop="5dp"/>
+
+                <SeekBar
+                    android:id="@+id/audio_bar"
+                    android:progress="0"
+                    android:max="100"
+                    android:layout_width="308dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/audio_ic"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_alignStart="@id/audio_ic"
+                    android:thumbTint="@color/white"
+                    android:progressTint="@color/selectedItem"
+                    android:progressBackgroundTint="#8c8c8c"
+                    />
+
+
+                <TextView
+                    android:fontFamily="@font/montserrat_light1"
+                    android:textColor="#cccccc"
+                    android:id="@+id/autor_info_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nome do autor"
+
+                    android:layout_marginTop="120dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_below="@id/autor_info_image"
+                    android:layout_marginStart="25dp"
+                    android:textSize="28sp"/>
+
+                <TextView
+                    android:fontFamily="@font/montserrat_light1"
+                    android:textColor="@color/unselectedItem"
+                    android:id="@+id/autor_info_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2000 - 2020"
+                    android:singleLine="true"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_below="@id/autor_info_name"
+                    android:layout_alignStart="@id/autor_info_name"
+                    android:textSize="22sp"/>
+
+
+
+                <TextView
+                    android:fontFamily="@font/montserrat_light1"
+                    android:textColor="@color/unselectedItem"
+                    android:id="@+id/nacionalidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nacionalidade"
+                    android:textSize="22sp"
+
+                    android:layout_marginEnd="25dp"
+
+                    android:layout_marginTop="22dp"
+                    android:layout_below="@id/autor_info_year"
+                    android:layout_marginStart="25dp"
+                    />
+
+                <TextView
+                    android:fontFamily="@font/montserrat_light1"
+                    android:textColor="#4c4c4c"
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Descrição"
+                    android:singleLine="true"
+
+                    android:layout_marginTop="28dp"
+                    android:layout_below="@id/nacionalidade"
+                    android:layout_alignStart="@id/autor_info_year"
+                    android:textSize="22sp"/>
+
+
+                <TextView
+                    android:fontFamily="@font/montserrat_light1"
+                    android:textColor="#cccccc"
+                    android:id="@+id/autor_info_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="25dp"
+                    android:layout_alignStart="@id/autor_info_year"
+                    android:layout_below="@id/description"
+                    android:text="Descrição do autor"
+                    android:layout_marginTop="18dp"
+
+                    android:textSize="22sp"/>
+
+                <TextView
+                    android:fontFamily="@font/montserrat_light1"
+                    android:textColor="#4c4c4c"
+                    android:id="@+id/obras_autor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Obras ________________________"
+                    android:singleLine="true"
+
+                    android:layout_marginTop="32dp"
+                    android:layout_below="@id/autor_info_description"
+                    android:layout_alignStart="@id/autor_info_year"
+                    android:textSize="22sp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/autor_obras_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/obras_autor"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="120dp"
+                    tools:listitem="@layout/user_recycler_item"/>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

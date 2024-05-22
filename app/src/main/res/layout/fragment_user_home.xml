@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UserHomeFragment"
+    android:background="#1c1c1c">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#1c1c1c"/>
+    <TextView
+        android:id="@+id/toolbar_textview"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_marginTop="30dp"
+
+        android:background="#1c1c1c"/>
+    <Button
+        android:id="@+id/ab_dots_button"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="22dp"
+        android:background="@android:color/transparent"/>
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/ab_dots_icon"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="3dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/user_recycle_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/user_recycler_item"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_below="@+id/toolbar_textview"
+        android:layout_marginBottom="88dp"
+        />
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="220dp"
+    android:layout_width="300dp"
+    android:layout_gravity="center"
+
+
+    android:background="@drawable/pop_up_background"
+    >
+    <ImageButton
+        android:id="@+id/adm_pop_up_button_cancel"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/sb_cancel_icon"
+        android:backgroundTint="#8c8c8c"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/text_popup"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/montserrat_light1"
+        android:layout_marginEnd="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tem certeza de que deseja remover a obra Nome da Obra?"
+        android:layout_marginTop="42dp"
+        android:textColor="#6c6c6c"
+        android:textSize="19sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confirm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sim"
+        android:textSize="22sp"
+        android:layout_marginTop="140dp"
+        android:textColor="@color/white"
+        android:layout_marginStart="32dp"
+        android:background="@android:color/holo_blue_light"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/deny_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="não"
+        android:layout_alignParentEnd="true"
+        android:textSize="22sp"
+        android:layout_marginTop="140dp"
+        android:textColor="@color/white"
+        android:layout_marginEnd="32dp"
+        android:background="@android:color/holo_blue_light"
+        android:backgroundTint="@android:color/holo_red_light"
+        />
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

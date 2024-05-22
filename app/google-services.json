@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "236305520823",
+    "project_id": "unifor-9e13b",
+    "storage_bucket": "unifor-9e13b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236305520823:android:628cb3a126d7b8b5815532",
+        "android_client_info": {
+          "package_name": "com.example.centrocultural"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmUf7AEbqqdm6EFurU8zD57ZpeZJx8-xE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

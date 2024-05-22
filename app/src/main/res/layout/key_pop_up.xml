@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="300dp"
+    android:layout_width="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+
+    android:background="@drawable/pop_up_background">
+
+    <ImageButton
+        android:id="@+id/key_pop_up_button_cancel"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/sb_cancel_icon"
+        android:backgroundTint="#8c8c8c"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_light1"
+        android:textColor="#6c6c6c"
+        android:text="Insira a chave de acesso para entrar como administrador."
+        android:textSize="16sp"
+        android:layout_marginTop="32dp"/>
+
+        <EditText
+            android:fontFamily="@font/montserrat_light1"
+            android:layout_centerHorizontal="true"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="chave de acesso"
+            android:id="@+id/key_pop_up_text"
+            android:paddingStart="16dp"
+            android:inputType="textPassword"
+            android:background="@drawable/pop_up_key_text_blue"
+            android:layout_marginTop="100dp"
+            />
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/pop_up_chave_incorreta_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="chave incorreta"
+        android:layout_alignStart="@+id/key_pop_up_text"
+        android:layout_alignTop="@id/key_pop_up_text"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="16dp"
+        android:textColor="@android:color/holo_red_light"
+
+        />
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/pop_up_chave_incorreta_icon"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignStart="@id/pop_up_chave_incorreta_text"
+        android:layout_alignTop="@id/pop_up_chave_incorreta_text"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/pu_error_icon"
+        android:backgroundTint="@android:color/holo_red_light"/>
+
+
+    <TextView
+        android:fontFamily="@font/montserrat_light1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#6c6c6c"
+        android:text="Caso tenha esquecido a chave, entre em contado com os desenvolvedores."
+        android:textSize="16sp"
+        android:layout_marginTop="170dp"/>
+
+    <Button
+        android:id="@+id/key_pop_up_button_enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="enviar"
+        android:textColor="#4c4c4c"
+        android:textSize="18dp"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

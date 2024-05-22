@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="300dp"
+    android:layout_width="300dp"
+    android:layout_gravity="center"
+
+    android:background="@drawable/pop_up_background"
+    >
+    <ImageButton
+        android:id="@+id/pop_up_button_cancel"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/sb_cancel_icon"
+        android:backgroundTint="#8c8c8c"
+        android:layout_alignParentEnd="true"/>
+
+
+
+    <TextView
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/montserrat_light1"
+        android:layout_height="wrap_content"
+        android:text="O administrador tem acesso a ferramentas de cadastro, edição e remoção de obras e autores"
+        android:layout_marginTop="32dp"
+        android:textColor="#6c6c6c"
+        android:textSize="16sp"/>
+
+
+    <ImageView
+        android:id="@+id/pop_up_center_circle"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/circle"
+        android:backgroundTint="#0069b5"/>
+    <ImageView
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@id/pop_up_center_circle"
+        android:layout_marginStart="68dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="#0069b5"/>
+    <ImageView
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@id/pop_up_center_circle"
+        android:layout_marginEnd="68dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="#0069b5"/>
+
+
+
+    <ImageView
+        android:layout_alignEnd="@id/pop_up_center_icon"
+        android:layout_marginEnd="60dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/adm_add_icon"
+        android:backgroundTint="@color/white"
+        android:layout_centerVertical="true"
+
+        />
+    <ImageView
+        android:id="@+id/pop_up_center_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/adm_edit_icon"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/white"
+        />
+    <ImageView
+        android:layout_alignStart="@id/pop_up_center_icon"
+        android:layout_marginStart="68dp"
+        android:backgroundTint="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/adm_delete_icon"
+        android:layout_centerVertical="true"
+        />
+
+
+    <TextView
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/montserrat_light1"
+        android:layout_height="wrap_content"
+        android:text="O modo de administração é restrito para usuário autorizados."
+        android:textColor="#6c6c6c"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/pop_up_center_circle"/>
+
+    <Button
+        android:id="@+id/pop_up_button_continuar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="continuar"
+        android:textColor="#4c4c4c"
+        android:textSize="18dp"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#1c1c1c"
+    android:layout_height="480dp"
+    >
+
+    <ImageView
+        android:id="@+id/user_frame_item_image"
+        android:layout_width="320dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/frame_regular_background"
+        />
+    <TextView
+        android:id="@+id/user_frame_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Nome da obra"
+        android:textSize="26sp"
+        android:singleLine="true"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="#8c8c8c"
+        android:gravity="center"
+        />
+
+
+        <ImageView
+            android:id="@+id/editcircle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@id/user_frame_item_image"
+            android:layout_marginBottom="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_alignBottom="@id/user_frame_item_image"
+            android:background="@drawable/editremove_bg"/>
+    <ImageView
+        android:id="@+id/removecircle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@id/user_frame_item_image"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="64dp"
+        android:layout_alignBottom="@id/user_frame_item_image"
+        android:background="@drawable/editremove_bg"/>
+
+    <ImageButton
+        android:id="@+id/edit_button"
+        android:layout_alignBottom="@id/editcircle"
+        android:layout_alignEnd="@id/editcircle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="#8c8c8c"
+        android:background="@drawable/adm_edit_icon"
+        />
+
+    <ImageButton
+        android:id="@+id/remove_button"
+        android:layout_alignBottom="@id/removecircle"
+        android:layout_alignEnd="@id/removecircle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="#8c8c8c"
+        android:background="@drawable/adm_delete_icon"
+        />
+
+</RelativeLayout>

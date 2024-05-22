@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdmObraFragment">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#1c1c1c"/>
+
+    <TextView
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#1c1c1c"
+        android:layout_below="@id/appbar"/>
+    <ImageButton
+        android:id="@+id/frame_back_button"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/info_back_icon"
+        android:backgroundTint="@color/unselectedItem"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/appbar"
+        android:layout_marginEnd="8dp"
+        />
+    <LinearLayout
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1c1c1c">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/frame_info_image"
+                    android:layout_width="352dp"
+                    android:layout_height="440dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/frame_regular_background"/>
+
+                <ImageView
+                    android:id="@+id/editcircle"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignEnd="@id/frame_info_image"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_alignBottom="@id/frame_info_image"
+                    android:background="@drawable/editremove_bg"/>
+                <ImageView
+                    android:id="@+id/removecircle"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignEnd="@id/frame_info_image"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginEnd="64dp"
+                    android:layout_alignBottom="@id/frame_info_image"
+                    android:background="@drawable/editremove_bg"/>
+
+                <ImageButton
+                    android:id="@+id/edit_button"
+                    android:layout_alignBottom="@id/editcircle"
+                    android:layout_alignEnd="@id/editcircle"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:backgroundTint="#8c8c8c"
+                    android:background="@drawable/adm_edit_icon"
+                    />
+
+                <ImageButton
+                    android:id="@+id/remove_button"
+                    android:layout_alignBottom="@id/removecircle"
+                    android:layout_alignEnd="@id/removecircle"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:backgroundTint="#8c8c8c"
+                    android:background="@drawable/adm_delete_icon"
+                    />
+
+
+
+
+                <ImageView
+                    android:id="@+id/qr_code_icon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="-5dp"
+                    android:background="@drawable/adm_qrcode_icon"
+                    android:backgroundTint="@color/unselectedItem"
+                    android:layout_alignStart="@id/frame_info_image"
+                    android:layout_below="@id/frame_info_image"
+                    android:layout_marginTop="42dp"/>
+                <TextView
+                    android:id="@+id/qrcode_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qrCode_str"
+                    android:layout_alignStart="@id/qr_code_icon"
+                    android:layout_alignBottom="@id/qr_code_icon"
+                    android:textColor="@color/unselectedItem"
+                    android:layout_marginBottom="6dp"
+                    android:textSize="22dp"
+                    android:layout_marginStart="58dp"
+                    android:fontFamily="@font/montserrat_light1"/>
+
+                <Button
+                    android:id="@+id/qrcode_button"
+                    android:layout_alignStart="@id/qr_code_icon"
+                    android:layout_alignEnd="@id/qrcode_text"
+                    android:layout_alignBottom="@id/qr_code_icon"
+                    android:background="@android:color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"/>
+
+
+                <ImageButton
+
+                    android:id="@+id/play_audio"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/play_icon"
+                    android:backgroundTint="@color/unselectedItem"
+                    android:layout_marginStart="17dp"
+                    android:layout_below="@id/frame_info_image"
+                    android:layout_marginTop="122dp"
+                    />
+                <ImageButton
+                    android:visibility="invisible"
+                    android:id="@+id/pause_audio"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/pause_icon"
+                    android:backgroundTint="@color/unselectedItem"
+                    android:layout_marginStart="17dp"
+                    android:layout_below="@id/frame_info_image"
+                    android:layout_marginTop="122dp"/>
+
+                <ImageView
+                    android:id="@+id/audio_ic"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/audio_icon"
+                    android:backgroundTint="@color/unselectedItem"
+                    android:layout_alignStart="@id/play_audio"
+                    android:layout_alignTop="@id/play_audio"
+                    android:layout_marginStart="42dp"
+                    android:layout_marginTop="5dp"/>
+
+                <SeekBar
+                    android:id="@+id/audio_bar"
+                    android:progress="0"
+                    android:max="100"
+                    android:layout_width="308dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/audio_ic"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_alignStart="@id/audio_ic"
+                    android:thumbTint="@color/white"
+                    android:progressTint="@color/selectedItem"
+                    android:progressBackgroundTint="#8c8c8c"
+                    />
+
+                <TextView
+                    android:textColor="#cccccc"
+                    android:id="@+id/frame_info_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nome da obra"
+                    android:fontFamily="@font/montserrat_light1"
+
+                    android:layout_alignEnd="@id/frame_info_image"
+                    android:layout_marginTop="660dp"
+                    android:layout_alignStart="@id/frame_info_image"
+                    android:textSize="28sp"/>
+
+                <TextView
+                    android:textColor="@color/unselectedItem"
+                    android:id="@+id/frame_info_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2000"
+                    android:fontFamily="@font/montserrat_light1"
+                    android:singleLine="true"
+                    android:layout_alignEnd="@id/frame_info_image"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@id/frame_info_name"
+                    android:layout_alignStart="@id/frame_info_image"
+                    android:textSize="22sp"/>
+                <Button
+                    android:id="@+id/autor_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/frame_info_autor_image"
+                    android:layout_alignTop="@id/frame_info_autor_image"
+                    android:layout_alignEnd="@id/frame_info_autor_name"
+                    android:layout_alignBottom="@id/frame_info_autor_image"
+                    android:background="@android:color/transparent"/>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_alignStart="@id/frame_info_image"
+                    android:id="@+id/frame_info_autor_image"
+                    android:layout_marginTop="65dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/circle"
+                    android:layout_alignTop="@id/frame_info_year"
+                    />
+
+                <TextView
+                    android:textColor="@color/unselectedItem"
+                    android:id="@+id/frame_info_autor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nome do autor"
+                    android:textSize="24sp"
+                    android:singleLine="true"
+                    android:fontFamily="@font/montserrat_light1"
+                    android:layout_alignEnd="@id/frame_info_image"
+                    android:layout_alignTop="@id/frame_info_autor_image"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginStart="85dp"
+                    android:layout_alignStart="@id/frame_info_image"/>
+
+                <TextView
+                    android:textColor="@color/unselectedItem"
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Descrição"
+                    android:singleLine="true"
+                    android:fontFamily="@font/montserrat_light1"
+                    android:layout_alignEnd="@id/frame_info_image"
+                    android:layout_marginTop="105dp"
+                    android:layout_alignTop="@id/frame_info_autor_image"
+                    android:layout_alignStart="@id/frame_info_image"
+                    android:textSize="22sp"/>
+
+
+                <TextView
+                    android:textColor="#cccccc"
+                    android:id="@+id/frame_info_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/frame_info_image"
+                    android:layout_alignStart="@id/frame_info_image"
+                    android:layout_below="@id/description"
+                    android:text="Descrição da obra"
+                    android:fontFamily="@font/montserrat_light1"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="120dp"
+                    android:textSize="22sp"/>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

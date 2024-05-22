@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_obras_search"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userSeachObras"
+    android:background="#1c1c1c">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_frame_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/adm_recycler_item"
+        android:layout_marginBottom="88dp"/>
+
+
+</FrameLayout>
